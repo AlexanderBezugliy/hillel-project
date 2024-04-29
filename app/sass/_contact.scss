@@ -1,0 +1,115 @@
+.contact {
+
+    &__information {
+        padding: 30px 0;
+        border-bottom: 4px solid #E6E6F0;
+
+        &-adres {
+            font-family: 'Montserrat';
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: left;
+            color: #323264;
+            border-bottom: 4px solid #E6E6F0;
+            padding-bottom: 30px;
+        }
+
+        &-tel {
+            padding: 30px 0 15px;
+        }
+
+        &-tel a:hover {
+            color: #F0145A;
+            transition-duration: 0.5s;
+            transition-property: color;
+        }
+
+        &-tel a {
+            font-family: 'Montserrat';
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: left;
+            color: #46466E;
+
+        }
+
+        &-mail a {
+            font-family: 'Montserrat';
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: left;
+            color: #24A3FF;
+        }
+
+        &-mail a:hover {
+            color: #F0145A;
+            transition-duration: 0.5s;
+            transition-property: color;
+        } 
+    }
+
+    &__fb {
+        padding: 30px 0;
+
+        &-icon {
+           display: flex;
+           flex-wrap: nowrap;
+        }
+
+        &-icon:hover path {
+            fill: #F0145A;
+            transition-duration: 0.5s;
+            transition-property: fill;
+        }
+
+        &-text {
+            font-family: 'Montserrat';
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 1px;
+            text-align: left;
+            color: #24A3FF;
+            text-transform: uppercase;
+            padding: 5px 0 0 10px;
+        }
+
+        &-text:hover {
+            color: #F0145A;
+            transition-duration: 0.5s;
+            transition-property: color;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .contact__information {
+        padding-top: 60px;
+    }
+
+    .contact__fb {
+        padding-bottom: 60px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .contact_menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    .contact {
+        width: 50%;
+    }
+
+    .form {
+        width: 50%;
+    }
+}

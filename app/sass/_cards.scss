@@ -1,0 +1,113 @@
+.cards {
+    padding-top: 30px;
+    background-color: #F5F5FA;
+
+    &__box {
+        border-bottom: 2px solid #E6E6F0;
+        padding-bottom: 30px;
+    }
+
+    &__wrap-link {
+        display: inline-flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 17.07px;
+        letter-spacing: 1px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #24A3FF;
+    }
+
+    &__wrap-title {
+        font-size: 30px;
+        line-height: 36.57px;
+        text-align: left;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-top: 5px;
+    }
+
+    &__box-wrap {
+        background-color: $white;
+        margin-top: 30px;
+        border-radius: 8px;
+    }
+
+    &__box-wrap-img {
+        display: block;
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+
+    &__content {
+        padding: 30px;
+        display: grid;
+        gap: 15px;
+    }
+
+    &__content-link {
+        font-size: 16px;
+        line-height: 19.5px;
+        text-align: left;
+        color: #24A3FF;
+    }
+
+    &__content-link:hover {
+        background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+        -webkit-background-clip: text;
+        color: transparent;
+        transition-duration: 0.2s;
+        transition-property: color;
+    }
+
+    &__content-months {
+        font-size: 12px;
+        line-height: 14.63px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #B3B3BA;
+        border-bottom: 4px solid #E6E6F0;
+        padding-bottom: 15px;
+    }
+
+    &__content-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        color: $black;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .cards__box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 30px;
+    }
+
+    .cards__box-wrap:last-child {
+        margin-top: 30px;
+        grid-column: span 2;
+    }
+
+    .cards__wrap-title {
+        font-size: 38px;
+        line-height: 46.32px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cards__box {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cards__box-wrap:last-child {
+        margin-top: 30px;
+        grid-column: auto;
+    }
+}

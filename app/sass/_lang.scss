@@ -1,0 +1,54 @@
+.lang {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+
+    & li {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    & a {
+        color: $white;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight: bold;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 5px 7px;
+        border-radius: 8px;
+    }
+    
+    & a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transition-duration: 0.3s;
+        transition-property: background-color;
+    }
+
+    & a.active {
+        background-color: $red;
+        color: $white;
+    }
+    
+}
+
+.lang-white {
+    color: #B3B3BA;
+}
+
+.lang-white a{
+    color: #B3B3BA;
+}
+
+.lang-white .lang__hover:hover{
+    background-color: rgba(245, 245, 250, 1);
+    transition-duration: 0.2s;
+    transition-property: background-color;
+}
+
+.lang-blue a {
+    color: #24A3FF;
+}

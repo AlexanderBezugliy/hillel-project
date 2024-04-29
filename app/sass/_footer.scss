@@ -1,0 +1,216 @@
+.footer {
+    background-color: #F5F5FA;
+    padding: 30px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrap-adress {
+        display: flex;
+        padding-bottom: 21px;
+    }
+
+    &__wrap-adress-str {
+        display: inline-flex;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: left;
+        color: #323264;
+    }
+
+    &__wrap-adress-str::after {
+        display: inline-flex;
+        align-items: end;
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-color: #B3B3BA;
+        border-radius: 50%;
+        margin: 0 7px;
+        margin-top: 8px;
+    }
+
+    &__phone {
+        display: inline-flex;
+        font-size: 16px;
+        line-height: 19.5px;
+        text-decoration: none;
+        color: #46466E;
+        padding: 10px 0;
+    }
+
+    &__phone:hover {
+        color: #F0145A;
+        transition-duration: 0.6s;
+        transition-property: color;
+    }
+
+    &__phone::before {
+        display: inline-flex;
+        align-items: end;
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-color: #B3B3BA;
+        border-radius: 50%;
+        margin: 0 7px;
+        margin-top: 7px;
+    }
+
+    &__phone::after {
+        display: inline-flex;
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-color: #B3B3BA;
+        border-radius: 50%;
+        margin: 0 7px;
+        margin-top: 7px;
+    }
+
+    &__wrap-adress-map:hover a {
+        color: #F0145A;
+        transition-duration: 0.6s;
+        transition-property: color;
+    }
+
+    &__wrap-adress-map a {
+        font-size: 12px;
+        line-height: 14.63px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #24A3FF;
+    }
+
+    &__info-fb {
+        display: inline-block;
+        text-decoration: none;
+        align-items: center;
+    }
+
+    &__info-fb:hover path {
+        fill: #F0145A;
+        transition-duration: 0.6s;
+        transition-property: fill;
+    }
+
+    &__wrap-info {
+        display: flex;
+    }
+
+    &__email {
+        font-size: 16px;
+        line-height: 19.5px;
+        color: #24A3FF;
+        text-decoration: none;
+        margin-bottom: 30px;
+        padding-top: 10px;
+    }
+
+    &__email:hover {
+        color: #F0145A;
+        transition-duration: 0.6s;
+        transition-property: color;
+    }
+
+    &__user-rights {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        color: #B3B3BA;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .footer__wrap{
+        display: block;
+    }
+    .footer__wrap-adress {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer__wrap-info {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__email {
+        padding-top: 11px
+    }
+
+    .footer__user-rights {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__phone::before {
+        display: inline-flex;
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-color: #B3B3BA;
+        border-radius: 50%;     
+    }
+
+    .footer__phone::after {
+        display: inline-flex;
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-color: #B3B3BA;
+        border-radius: 50%;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .footer__email {
+        padding-top: 0px
+    }
+
+    .footer__wrap {
+        display: block;
+    }
+
+    .footer__wrap-adress{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .footer__wrap-adress-str {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .footer__wrap-adress-str::after {
+        display: none;
+    }
+
+    .footer__wrap-adress-map {
+        padding: 10px 0 21px;
+    }
+
+    .footer__wrap-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__phone::before {
+        display: none;
+    }
+
+    .footer__phone::after {
+        display: none;
+    }
+}

@@ -1,0 +1,133 @@
+.menu {
+    display: inline-flex;
+    align-items: center;
+
+    &__list {
+        display: none;
+        gap: 15px;
+    }
+
+    &__burger {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        gap: 25px;
+        list-style: none;
+        padding-left: 0;
+        top: 100px;
+        left: 0;
+        text-align: center;
+        justify-content: center;
+        font-size: 24px;
+        width: 100%;
+        border-radius: 12px;
+        background-color: $white;
+        padding: 12px 0;
+
+        &-link {
+            padding: 7px 0;
+            margin-bottom: 15px;
+            background-color: #F5F5FA;;
+            width: 351px;
+            border-radius: 12px;
+            color: #24A3FF;
+            font-size: 24px;
+        }
+
+        &-link:hover {
+            background-color: #E6E6F0;
+        }
+
+        &-link:active {
+            color: #F0145A;
+        }
+    }
+
+    &__burger_last {
+        margin-bottom: 0;
+    }
+
+    &__list-item {
+        display: inline-flex;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        line-height: 19.5px;
+        text-align: right;
+        font-size: 16px;
+        color: $white;
+    }
+
+    &__btn {
+        background-image: url('../img/Hamburger.svg');
+        background-repeat: no-repeat;
+        width: 32px;
+        height: 33px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 5px 7px;
+        border-radius: 8px;
+    }
+
+    .home-btn {
+        background-image: url('../img/Hamburger-white.svg');
+        background-repeat: no-repeat;
+        width: 32px;
+        height: 33px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 5px 7px;
+        border-radius: 8px;
+    }
+
+    .home-btn-close {
+        background-image: url('../img/Close.svg');
+    }
+
+    &__list-item:hover {
+        border-bottom: 2px solid $red;
+        color: $red;
+        transition-duration: 0.6s;
+        transition-property: color, border-bottom;
+    }
+    
+    &__btn:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &__btn.active {
+        background-image: url('../img/Close.svg');
+    }
+
+    @media (min-width: 768px) {
+        &__btn {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+            padding: 0;
+            list-style: none;
+        }
+
+        &__list-item {
+            border-bottom: 2px solid transparent;
+            padding-bottom: 3px;
+        }
+
+        &__list li a {
+            text-decoration: none;
+        }
+    }
+
+    @media (min-width: 992px) {
+        & {
+            justify-self: end;
+            padding-top: 10px;
+            -webkit-box-align: start;
+            align-items: flex-start;
+        }
+    }
+}
+

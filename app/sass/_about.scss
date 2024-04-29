@@ -1,0 +1,284 @@
+.about {
+    padding-top: 30px;
+
+    // &__team {
+    //     border-bottom: 2px solid #E6E6F0;
+    //     padding-bottom: 30px;
+    // }
+
+    &__block {
+        display: flex;
+    }
+
+    &__block-wrap {
+        padding-bottom: 40px;
+    }
+
+    &__block-wrap:last-child {
+        padding-bottom: 0;
+    }
+
+    &__block-wrap p {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: left;
+        color: #323264;
+    }
+
+    &__block-title {
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    &__block-info {
+        width: 36%;
+        border-left: 4px solid #E6E6F0;
+        padding-left: 28px;
+        // height: 322px;
+    }
+
+    &__block-title h2 {
+        // font-family: 'Montserrat';
+        font-size: 38px;
+        // font-weight: 700;
+        line-height: 46.32px;
+        text-align: left;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__block-title p {
+        // font-family: 'Montserrat';
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+        padding: 28px 0 25px;
+    }
+
+    &__block-title span {
+        display: block;
+        font-family: 'Montserrat';
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    &__block-elem {
+        // font-family: 'Montserrat';
+        font-size: 36px;
+        // font-weight: 700;
+        line-height: 43.88px;
+        text-align: center;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-left: 8px;
+    }
+
+    &__block-img {
+        // text-decoration: none;
+    }
+
+    &__block-wrap p {
+        // font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: left;
+        padding-top: 10px;
+    }
+
+    &__team-pic {
+        width: 100%;
+        height: auto;
+        padding: 60px 0;
+    }
+
+    &__team-wrap {
+        display: flex;
+        padding-bottom: 30px;
+    }
+
+    &__team-info {
+        width: 64%;
+        padding-right: 30px;
+    }
+
+    &__team-info p {
+        font-family: 'Montserrat';
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    &__team-info span {
+        display: block;
+        margin: 25px 0;
+    }
+
+    &__team-sub {
+        width: 36%;
+        padding-left: 30px;
+    }
+
+    &__team-sub p {
+        font-family: 'Montserrat';
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 46.32px;
+        text-align: left;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__footer{
+        background-color: #F5F5FA;
+        margin-top: 30px;
+    }
+
+    &__footer-achievements {
+        border-bottom: 2px solid #E6E6F0;
+        padding-bottom: 30px;
+    }
+
+    &__footer-achievements p {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17.07px;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 30px 0;
+    }
+
+    &__footer-achievements-pic {
+        display: none;
+    }
+
+    &__footer-achievements-item {
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__footer-achievements-item li {
+        display: inline-flex;
+        width: 25%;
+        padding: 24px 0;
+        background-color: #fff;
+        border-radius: 12px;
+        margin-right: 40px;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__footer-achievements-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__footer-achievements-item li:last-child {
+        margin-right: 0;
+    }
+
+    &__footer-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .about__block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about__block-title {
+        width: 100%;
+        max-width: 648px;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .about__block-info {
+        width: 100%;
+        max-width: 648px;
+    }
+
+    .about__team-wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about__team-info {
+        width: 100%;
+        padding-right: 0;
+        max-width: 648px;
+    }
+
+    .about__team-sub {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 30px;
+        max-width: 648px;
+    }
+
+    .about__team-sub p {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about__block-title {
+        width: 100%;
+    }
+
+    .about__block-title h2 {
+        line-height: 36.57px; 
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .about__block-info {
+        width: 100%;
+    }
+
+    .about__team-sub p {
+        font-size: 30px;
+        line-height: 36.57px;
+    }
+
+    .about__team-wrap{
+        width: 100%;
+    }
+
+    .about__footer-achievements-item {
+        display: none;
+    }
+    
+    .about__footer-achievements-pic {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .about__footer-achievements-pic li {
+        background-color: #fff;
+        padding: 25px 100px;
+        border-radius: 12px;
+        list-style: none;
+    }
+}
+
+

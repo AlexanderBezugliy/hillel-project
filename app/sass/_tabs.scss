@@ -1,0 +1,108 @@
+.tabs {
+    &__switch {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+        overflow: auto;
+    
+        padding-bottom: 20px;
+        border-bottom: 4px solid #FFFFFF4D;
+    }
+
+    &__switch::-webkit-scrollbar {
+        display: none;
+    }
+    
+    &__switch-item {
+        font-family: "Montserrat";
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36.57px;
+        text-align: left;
+        margin-right: 30px;
+        white-space: nowrap;
+        background-color: transparent;
+        border: none;
+        color: $white;
+        cursor: pointer;
+    }
+
+    &__switch-item.active {
+        background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &__switch-item:hover {
+        background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+        -webkit-background-clip: text;
+        color: transparent;
+        transition-duration: 0.3s;
+        transition-property: color, border;
+    }
+
+    &__content.active {
+        display: block;
+    }
+
+    &__title {
+        font-family: "Montserrat";
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24.38px;
+        text-align: left;
+        color: $white;
+        padding: 30px 0;
+    }
+
+    &__sub-title {
+        font-family: 'Montserrat';
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        color: $white;
+        padding-bottom: 30px;
+    }
+
+
+}
+
+
+@media (min-width: 768px) {
+    .tabs {
+        padding-bottom: 30px;
+    }
+    .tabs__title {
+        padding-top: 60px;
+    }
+    .tabs__switch {
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .tabs {
+        max-width: 1080px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 60px;
+    }
+
+    .tabs__switch {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-width: 375px;
+        border-bottom: none;
+        padding-bottom: 0;
+        border-right: 4px solid #FFFFFF4D;
+        text-align: right;
+        padding-right: 22px;
+    }
+
+    .tabs__content {
+        padding-left: 60px;
+    }
+}

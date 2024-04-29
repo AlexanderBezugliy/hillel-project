@@ -1,0 +1,30 @@
+.gradient-services {
+    /* условная высота */
+    // height: 800px;
+    background: var(--gradient-supersoft, linear-gradient(280deg, #323264 0%, #323264 59.90%, #643E72 100%));
+    border-radius: 0 0 12px 12px;
+    position: relative;
+
+    &::after {
+        content: '';
+        border-radius: 0 0 12px 12px;
+        background: #CACADB;
+        height: 10px;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+    }
+
+    &::before {
+        content: '';
+        border-radius: 0 0 12px 12px;
+        background: #E7E7F2;
+        height: 10px;
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+    }
+
+}

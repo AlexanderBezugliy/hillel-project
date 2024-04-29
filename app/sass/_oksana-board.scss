@@ -1,0 +1,209 @@
+.oksana-board {
+    padding: 30px 0;
+    &__links {
+        padding: 30px 0;
+    }
+
+    &__pic img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    &__links-title {
+        font-family: 'Montserrat';
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 46.32px;
+        text-align: left;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 15px;
+    }
+
+    &__links-sub-title {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        color: #B3B3BA;
+    }
+    
+    &__links-email {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: left;
+        color: #24A3FF;
+        padding: 10px 0;
+    }
+
+    &__links-linkedin {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: left;
+        color: #24A3FF;
+    }
+
+    &__wrap {
+        border-top: 4px solid #E6E6F0;
+    }
+
+    &__wrap-info {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: #000000;
+        padding-top: 30px;
+    }
+
+    &__wrap-introduce {
+        padding-bottom: 20px;
+    }
+
+    &__wrap-education p {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: #000000;
+    }
+
+    &_sub {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17.07px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #323264;
+        text-transform: uppercase;
+        padding: 30px 0 15px;
+    }
+
+    &__wrap-experience p {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: #000000;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .oksana-board__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .oksana-board {
+        padding: 60px 0;
+
+        &__pic {
+            width: 45%;
+    
+            & img {
+                height: 375px;
+            }
+        }
+    }
+
+    .oksana-board__pic {
+        padding-bottom: 30px;
+    }
+
+    .oksana-board__links {
+        padding-top: 0;
+    }
+
+    .oksana-board__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 55%;
+        padding-left: 30px;
+    }
+
+    .oksana-board__wrap {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .oksana-board__content {
+        display: grid;
+        grid-template-columns: 38% 1fr;
+    }
+
+    .oksana-board__pic {
+        grid-row: 1/3;
+        display: block;
+        width: 100%;
+        height: auto;
+        padding-right: 50px;
+    }
+
+    .oksana-board__links {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .oksana-board__wrap {
+        
+    }
+}
+
+@media (min-width: 1100px)  {
+    .oksana-board__content {
+        // display: grid;
+        // grid-template-columns: 38% 1fr;
+    }
+
+    .oksana-board__pic img {
+        width: 400px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .oksana-board__links-pack p {
+        display: inline-block;
+    }
+
+    .oksana-board__links-email {
+        padding: 0;
+    }
+
+    .oksana-board__links-email::before {
+        display: inline-block;
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #E6E6F0;
+        margin: 2px 10px 2px 5px;
+    }
+
+    .oksana-board__links-email::after {
+        display: inline-block;
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #E6E6F0;
+        margin: 2px 5px 2px 10px;
+    }
+    
+}
+

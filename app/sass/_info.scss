@@ -1,0 +1,139 @@
+.info {
+
+    &__wrap-img {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    &_gradient {
+        margin-bottom: 60px;
+    }
+
+    &_cards {
+        margin-top: 30px;
+    }
+
+    &_link {
+        font-family: 'Montserrat';
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36.57px;
+        text-align: center;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__text {
+        font-family: 'Montserrat';
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        color: $white;
+        // padding-top: 15px;
+        // padding-bottom: 20px;
+        padding: 15px 0 20px;
+    }
+
+    &__sub-text {
+        font-family: 'Montserrat';
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        color: $white;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0;
+        border-bottom: 4px solid gray;
+    }
+}
+
+.info-content {
+    padding: 30px 0 45px;
+
+    &__title {
+        font-family: 'Montserrat';
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26.82px;
+        text-align: left;
+        color: $white;
+    }
+
+    &__list-left {
+        padding-top: 30px;
+    }
+
+    &__list-left ol {
+        list-style-type: initial;
+        color: #F0145A;
+        padding-left: 15px;
+    }
+
+    &__list-right {
+        padding-top: 15px;
+    }
+
+    &__list-right ol {
+        list-style-type: initial;
+        color: #F0145A;
+        padding-left: 15px;
+    }
+
+    &__list-style {
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: $white;
+        padding-bottom: 15px;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    .info__wrap-img {
+        padding-top: 60px;
+    }
+
+    .info_link {
+        font-size: 38px;
+        line-height: 46.32px;
+    }
+
+    .info__btn {
+        padding-bottom: 60px;
+    }
+
+    .info-content__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+
+        &-left {
+            width: 50%;
+        }
+
+        &-right {
+            width: 50%;
+            padding-top: 30px;
+        }
+    }
+
+
+}
+
+
+
+@media (min-width: 992px) {
+
+}

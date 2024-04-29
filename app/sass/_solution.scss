@@ -1,0 +1,55 @@
+.solution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        font-size: 38px;
+        line-height: 46.32px;
+        text-align: center;
+        color: $white;
+        width: 345px;
+        margin: 0 auto;
+        padding: 130px 0 160px;
+    }
+
+    &__scroll {
+        padding-bottom: 90px;
+    }
+
+    &__scroll:hover .solution__scroll-circle {
+        stroke: red;
+        transition-duration: 0.8s;
+    }
+
+    &__scroll:hover .solution__scroll-circle-path {
+        stroke: red;
+        animation-name: anim;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+    }
+
+    @keyframes anim {
+        100% {
+           transition: transform 0.3s ease;
+           transform: translateY(30px);
+        }
+     }
+}
+
+
+@media (min-width: 768px) {
+    .solution__title {
+        width: auto;
+        padding: 270px 0 417px;
+    }
+}
+
+@media (min-width: 992px) {
+    .solution__title {
+        width: auto;
+        padding-top: 225px;
+        padding-bottom: 289px;
+    }
+}

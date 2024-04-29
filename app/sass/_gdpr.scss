@@ -1,0 +1,226 @@
+.gdpr {
+    &__introduce {
+        padding-bottom: 95px;
+
+        & img {
+            max-width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        
+        & h2 {
+            font-size: 20px;
+            line-height: 24.38px;
+            text-align: left;
+            color: #323264;
+        }
+
+        &-date {
+            font-size: 12px;
+            line-height: 14.63px;
+            letter-spacing: 1px;
+            text-align: left;
+            color: #B3B3BA;
+            padding: 15px 0 30px;
+        }
+
+        &-text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            padding-top: 26px;
+            border-top: 4px solid #E6E6F0;
+            color: #000000;
+        }
+
+        &-sub-text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            color: #000000;
+            padding-top: 18px;
+        }  
+    }
+
+    &__hide {
+        display: none;
+        font-size: 38px;
+        line-height: 46.32px;
+        text-align: left;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__list-main-text {
+        font-size: 16px;
+        line-height: 19.5px;
+        text-align: left;
+        color: #46466E;
+        padding-bottom: 15px;
+    }
+
+    &__list-content {
+        font-size: 18px;
+        line-height: 26px;
+        text-align: right;
+        padding: 0 0 15px 30px;
+        list-style-type: decimal;
+        color: #F0145A;
+
+        &-text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            color: #000000;
+            padding: 0 0 15px 10px;
+        }
+
+    }
+
+    &__list-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: #000000;
+    }
+
+    &__recommend {
+        padding-bottom: 15px;
+        border-bottom: 4px solid #E6E6F0;
+
+        &-img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__recommend-sub-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        color: #B3B3BA;
+    }
+
+    &__recommend-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: #000000;
+        padding: 30px 0;
+    }
+
+    &__recommend h2 {
+        font-size: 16px;
+        line-height: 19.5px;
+        text-align: left;
+        color: #323264;
+    }
+
+    &__recommend-text-second {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: #000;
+        padding: 15px 0;
+    }
+
+    &__links {
+        padding: 30px 0 60px;
+    }
+
+    &__links-group {
+        display: inline-flex;
+        list-style-type: none;
+        padding: 0;
+
+        & li {
+            background-color: #F5F5FA;
+            width: 42px;
+            height: 42px;
+            padding: 9px;
+            border-radius: 12px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        & li:hover {
+            background-color: #EDEDF7;
+        }
+    }
+}
+
+
+@media (min-width: 640px) {
+    .gdpr {
+        &__introduce img {
+            height: auto;
+        }
+    }  
+}
+
+
+@media (min-width: 768px) {
+    .gdpr {
+        &__introduce img {
+            height: 500px;
+        }
+
+        &__introduce h2 {
+            font-size: 30px;
+            line-height: 36.57px;
+        }
+
+        &__introduce {
+            padding-bottom: 30px;
+        }
+
+        &__hide {
+            display: block;
+            padding-bottom: 30px;
+        }
+
+        &__list-main-text {
+            font-size: 22px;
+            line-height: 26.82px;
+        }
+
+        &__recommend h2 {
+            font-size: 22px;
+            line-height: 26.82px;
+        }
+    } 
+}
+
+@media (min-width: 992px) {
+    .gdpr {
+        &__introduce img {
+            height: auto;
+        }
+
+        &__recommend-img {
+            display: block;
+            margin: 0 auto;
+            width: 640px;
+        }
+
+        &__list-text {
+            padding-bottom: 30px;
+        }
+
+        &__recommend-sub-text {
+            padding-top: 15px;
+        }
+    }
+}

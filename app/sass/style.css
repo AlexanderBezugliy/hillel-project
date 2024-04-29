@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1320px;
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: min-content min-content;
+}
+.header__phone {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  text-align: right;
+  color: #B3B3BA;
+  text-decoration: none;
+}
+.header__adress {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: right;
+  color: #B3B3BA;
+}
+.header__info {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F5F5FA;
+  margin: 0 -15px;
+  padding: 10px 15px;
+}/*# sourceMappingURL=style.css.map */

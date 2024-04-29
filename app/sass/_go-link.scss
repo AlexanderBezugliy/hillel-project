@@ -1,0 +1,31 @@
+.go-link {
+    display: inline-flex;
+    align-items: center;
+    color: #24a3ff;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition-duration: 300ms;
+    transition-property: color, transform;
+
+    &::after{
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        box-sizing: border-box;
+        border-top: 2px solid;
+        border-right: 2px solid;
+        transform: rotate(45deg);
+        transition-duration: 300ms;
+        transition-property: transform;
+    }
+    &:hover {
+        color: #f0145a;
+        &::after {
+            transform: rotate(45deg) translate(4px, -4px) scale(1.2);
+        }
+    }
+
+}
