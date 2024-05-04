@@ -12,7 +12,7 @@
     }
 
     &__links-title {
-        font-family: 'Montserrat';
+        // font-family: 'Montserrat';
         font-size: 38px;
         font-weight: 700;
         line-height: 46.32px;
@@ -24,7 +24,7 @@
     }
 
     &__links-sub-title {
-        font-family: 'Montserrat';
+        // font-family: 'Montserrat';
         font-size: 14px;
         font-weight: 400;
         line-height: 22px;
@@ -33,22 +33,34 @@
     }
     
     &__links-email {
-        font-family: 'Montserrat';
+        // font-family: 'Montserrat';
         font-size: 16px;
         font-weight: 400;
         line-height: 19.5px;
         text-align: left;
         color: #24A3FF;
         padding: 10px 0;
+
+        &:hover {
+            color: #F0145A;
+            transition-duration: 0.3s;
+            transition-property: color;
+        }
     }
 
     &__links-linkedin {
-        font-family: 'Montserrat';
+        // font-family: 'Montserrat';
         font-size: 16px;
         font-weight: 400;
         line-height: 19.5px;
         text-align: left;
         color: #24A3FF;
+        
+        &:hover {
+            color: #F0145A;
+            transition-duration: 0.3s;
+            transition-property: color;
+        }
     }
 
     &__wrap {
@@ -56,7 +68,7 @@
     }
 
     &__wrap-info {
-        font-family: 'Montserrat';
+        // font-family: 'Montserrat';
         font-size: 16px;
         font-weight: 400;
         line-height: 26px;
@@ -70,7 +82,7 @@
     }
 
     &__wrap-education p {
-        font-family: 'Montserrat';
+        // font-family: 'Montserrat';
         font-size: 16px;
         font-weight: 400;
         line-height: 26px;
@@ -79,9 +91,9 @@
     }
 
     &_sub {
-        font-family: 'Montserrat';
+        // font-family: 'Montserrat';
         font-size: 14px;
-        font-weight: 700;
+        // font-weight: 700;
         line-height: 17.07px;
         letter-spacing: 1px;
         text-align: left;
@@ -91,7 +103,7 @@
     }
 
     &__wrap-experience p {
-        font-family: 'Montserrat';
+        // font-family: 'Montserrat';
         font-size: 16px;
         font-weight: 400;
         line-height: 26px;
@@ -160,16 +172,9 @@
         width: 100%;
     }
 
-    .oksana-board__wrap {
-        
-    }
 }
 
 @media (min-width: 1100px)  {
-    .oksana-board__content {
-        // display: grid;
-        // grid-template-columns: 38% 1fr;
-    }
 
     .oksana-board__pic img {
         width: 400px;
